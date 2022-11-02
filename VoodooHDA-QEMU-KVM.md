@@ -1,6 +1,5 @@
 # Audio Playback Without Passthrough in macOS QEMU KVM using VoodooHDA
 
-## Introduction
 [OneClick macOS Simple KVM](https://oneclick-macos-simple-kvm.notaperson535.is-a.dev/), [OSX-KVM](https://oneclick-macos-simple-kvm.notaperson535.is-a.dev/), [Docker-OSX](https://github.com/sickcodes/Docker-OSX), and [Quickemu](https://github.com/quickemu-project/quickemu) are all great projects that allow users to run macOS/Hackintosh virtually in virtual machine. However, the playing audio will not work out of the box. To my surprise, there aren't many tutorial/guide on how to install VoodooHDA in macOS VM, and is why I've decided to do one. This guide is expected to work on Big Sur, Monterey and Ventura. Older versions might be problematic (testing needed).
 
 ## Is it worth it?
