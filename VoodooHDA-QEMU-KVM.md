@@ -22,7 +22,7 @@ Select the recovery partition (arrow keys) and press enter to boot into it.
 
 ![Recovery partition in OpenCore](/images/Recovery_in_OpenCore.png)
 
-Go to Utilities > Terminal, enter the command `csrutil status`. If you see either the line `System Integrity Protection status: disabled` or `Kext Signing: disabled`, then you can skip this step, restart and proceed to [download the latest kernel extension (kext)]()
+Go to Utilities > Terminal, enter the command `csrutil status`. If you see either the line `System Integrity Protection status: disabled` or `Kext Signing: disabled`, then you can skip this step, restart and proceed to [download the latest kernel extension (kext)](#download-latest-voodoohda)
 
 Run the below command (choose either one)
 ```
@@ -32,7 +32,7 @@ csrutil enable --without kext
 ```
 Reboot into macOS.
 ### Download latest VoodooHDA
-Once you have booted into your macOS, open Safari and download latest VoodooHDA kext from this [site]().
+Once you have booted into your macOS, open Safari and download latest VoodooHDA kext from this [site](https://sourceforge.net/projects/voodoohda).
 
 Open the terminal application, run `sudo cp -R Downloads/VoodooHDA.kext /Library/Extensions`, enter password when prompted. This will copy the kext to the extensions folder. Replace the `Downloads` to the path of the kext if you download it in a different folder.
 
@@ -60,6 +60,6 @@ After restarting, if everything is fine you should be able to find the 'Line out
 Got questions, problems, ideas or improvements? Just open a pull request or create an issue, I will try my best to help. I'm looking for better solution than VoodooHDA without having to passthrough audio device, anything would be very appreciated.
 
 ## Resources & references
-1. [InsanelyMac: VoodooHDA 3.01 (Credit: Slice)]()
-2. [GitHub: installVoodooHDA4BSnMont (Credit: yahgoo)]()
-2. [Apple Developer Forums: Enabling parts of System Integrity Protection while disabling specific parts?]()
+1. [InsanelyMac: VoodooHDA 3.01 (Credit: Slice)](https://www.insanelymac.com/forum/topic/314406-voodoohda-301/?do=findComment&comment=2756841)
+2. [GitHub: installVoodooHDA4BSnMont (Credit: yahgoo)](https://github.com/yahgoo/installVoodooHDA4BSnMont)
+2. [Apple Developer Forums: Enabling parts of System Integrity Protection while disabling specific parts?](https://developer.apple.com/forums/thread/17452)
